@@ -1,0 +1,69 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  color: teal;
+}
+
+.content {
+  margin: 40px 20px;
+  align-self: stretch;
+  display: flex;
+}
+
+.content-section {
+  flex: 1;
+  margin: 0px 10px;
+  padding: 10px;
+  border: 1px solid gray;
+}
+
+/* .content-section:not(:last-child) {
+  border-right: 0px;
+} */
+
+.user-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.error {
+  color: red;
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.3s linear;
+}
+
+.error.hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+
+.users {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.users .user {
+  padding: 10px;
+}
+
+.users .user:not(:last-child) {
+  border-bottom: 1px solid gray;
+}
